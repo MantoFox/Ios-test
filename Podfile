@@ -5,7 +5,7 @@ target 'IosClass' do
     pod 'NitroKeychain'
     pod 'AFNetworking'
     pod 'MagicalRecord'
-	pod 'SDWebImage'
+	pod 'SDWebImage', '3.7.5'
 
     target 'IosClassTests' do
         pod 'Nocilla'
