@@ -129,7 +129,6 @@
 		72C8CC2855787B9DC1A37DDEB5E24155 /* OCMFunctionsPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F1F4BB753247E903525DB6EFB268F6 /* OCMFunctionsPrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		72DAEE6B4886FECFF1E218CB89ED814A /* NSString+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D6CF645C19D7CCF23117E46FD20EBAF /* NSString+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72E00253644F78AE7DF3827B70B617C9 /* NSManagedObject+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = FA917AD8CE4F3336045B0E3A6374F356 /* NSManagedObject+MagicalRecord.m */; };
-		730AA0D92B1082B391751A1C72B883CF /* LSMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 436576394EAAF5FDF9AD1302943BE552 /* LSMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74BC62D6FEB722F4976016FD4DCA870B /* OCMObserverRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 036976E1062CFC07E390E88A783FBF5F /* OCMObserverRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		755535841C56B2488FE623A3B3615654 /* NSRelationshipDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1885B09CD8802524848C07CB829414 /* NSRelationshipDescription+MagicalDataImport.m */; };
 		76AA8C4C911CFA670E24787C40F2FDF0 /* LSHTTPRequestDSLRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2142EFD4473C25B2107D5F8D1721D561 /* LSHTTPRequestDSLRepresentation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -246,6 +245,7 @@
 		E23B9A6F533461CB33C0FA6FB59E3AB2 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C27F8E570A01BA7EA99917DD8D8E2B9A /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E321D4F8771D90D4F6E6DA417728CF84 /* NSManagedObjectContext+MagicalChainSave.h in Headers */ = {isa = PBXBuildFile; fileRef = C7EEB9F76DB31DFA08D90FADE92E6D93 /* NSManagedObjectContext+MagicalChainSave.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4070427AD7F08E573CAA22DCEB79FB1 /* OCProtocolMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1864F33182BE1A1F1BCC91EF4938BF3A /* OCProtocolMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E45F3C5016AD6F02D4606253481224BE /* LSMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 436576394EAAF5FDF9AD1302943BE552 /* LSMatcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E4A87D8BA9BA24EE81DEC41C8BE98F2B /* OCMVerifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 49F5FC237A33966EE8C9DC1B4586C9E3 /* OCMVerifier.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E4DB601C0C7CE8A1DFE45C1131BE2F3F /* MagicalRecord+Options.h in Headers */ = {isa = PBXBuildFile; fileRef = 694CA23993768EDB8EC0C7ADBCB82B3F /* MagicalRecord+Options.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E61FEAB563814E928FFF2C1EF239058A /* NSObject+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 33A7F5F719196A148121391BB332967B /* NSObject+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1353,7 +1353,7 @@
 				025E840BA8414D424ABEF6BBEA72F8AF /* LSHTTPResponse.h in Headers */,
 				FB601AF5677804AED9BE74CEC6C10C04 /* LSHTTPStubURLProtocol.h in Headers */,
 				ADFF8B5A34BC9DCA2A88314C5AAFFE1B /* LSMatcheable.h in Headers */,
-				730AA0D92B1082B391751A1C72B883CF /* LSMatcher.h in Headers */,
+				E45F3C5016AD6F02D4606253481224BE /* LSMatcher.h in Headers */,
 				E02A371ECD8DCCADB22D150F04083164 /* LSNocilla.h in Headers */,
 				4C21F267128D6D23C47B1AAB5E34EC90 /* LSNSURLHook.h in Headers */,
 				ECC674728A7188CB33198099A7F8FA55 /* LSNSURLSessionHook.h in Headers */,

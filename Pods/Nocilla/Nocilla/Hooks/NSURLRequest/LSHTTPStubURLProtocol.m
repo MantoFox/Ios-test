@@ -4,6 +4,10 @@
 #import "LSStubRequest.h"
 #import "NSURLRequest+DSL.h"
 
+@interface NSHTTPURLResponse(UndocumentedInitializer)
+- (id)initWithURL:(NSURL*)URL statusCode:(NSInteger)statusCode headerFields:(NSDictionary*)headerFields requestTime:(double)requestTime;
+@end
+
 @implementation LSHTTPStubURLProtocol
 
 + (BOOL)canInitWithRequest:(NSURLRequest *)request {
@@ -23,17 +27,13 @@
 
     LSStubResponse* stubbedResponse = [[LSNocilla sharedInstance] responseForRequest:request];
 
-    NSHTTPCookieStorage *cookieStorage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
-    [cookieStorage setCookies:[NSHTTPCookie cookiesWithResponseHeaderFields:stubbedResponse.headers forURL:request.url]
-                       forURL:request.URL mainDocumentURL:request.URL];
-
     if (stubbedResponse.shouldFail) {
         [client URLProtocol:self didFailWithError:stubbedResponse.error];
     } else {
         NSHTTPURLResponse* urlResponse = [[NSHTTPURLResponse alloc] initWithURL:request.URL
-                                                                     statusCode:stubbedResponse.statusCode
-                                                                    HTTPVersion:nil
-                                                                   headerFields:stubbedResponse.headers];
+                                                  statusCode:stubbedResponse.statusCode
+                                                headerFields:stubbedResponse.headers
+                                                 requestTime:0];
 
         if (stubbedResponse.statusCode < 300 || stubbedResponse.statusCode > 399
             || stubbedResponse.statusCode == 304 || stubbedResponse.statusCode == 305 ) {
@@ -44,6 +44,9 @@
             [client URLProtocol:self didLoadData:body];
             [client URLProtocolDidFinishLoading:self];
         } else {
+            NSHTTPCookieStorage *cookieStorage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+                      [cookieStorage setCookies:[NSHTTPCookie cookiesWithResponseHeaderFields:stubbedResponse.headers forURL:request.url]
+                                     forURL:request.URL mainDocumentURL:request.URL];
 
             NSURL *newURL = [NSURL URLWithString:[stubbedResponse.headers objectForKey:@"Location"] relativeToURL:request.URL];
             NSMutableURLRequest *redirectRequest = [NSMutableURLRequest requestWithURL:newURL];
