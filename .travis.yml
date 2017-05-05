@@ -1,0 +1,10 @@
+language: objective-c
+osx_image: xcode8.2
+xcode_workspace: IosClass.xcworkspace
+xcode_scheme: IosClass
+
+script:
+  - xcodebuild -scheme IosClass -workspace IosClass.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone SE,OS=10.0' build test
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
