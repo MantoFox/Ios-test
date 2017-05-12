@@ -65,6 +65,13 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WqM-lb-OZH">
+                    <rect key="frame" x="59" y="335.5" width="256" height="256"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="256" id="C7W-wm-nmh"/>
+                        <constraint firstAttribute="height" constant="256" id="WLQ-t2-ZZ9"/>
+                    </constraints>
+                </imageView>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bZT-LB-ns6">
                     <rect key="frame" x="67" y="190" width="240" height="30"/>
                     <constraints>
@@ -75,13 +82,14 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WqM-lb-OZH">
-                    <rect key="frame" x="59.5" y="357" width="256" height="256"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="256" id="C7W-wm-nmh"/>
-                        <constraint firstAttribute="height" constant="256" id="WLQ-t2-ZZ9"/>
-                    </constraints>
-                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7NW-h3-0zX">
+                    <rect key="frame" x="68" y="260" width="240" height="75.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jod-MN-TDJ">
+                    <rect key="frame" x="59" y="591.5" width="257" height="75.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -90,16 +98,25 @@
                 <constraint firstItem="bZT-LB-ns6" firstAttribute="top" secondItem="FJD-i2-pmg" secondAttribute="bottom" constant="10" id="BtZ-gK-nK1"/>
                 <constraint firstItem="Y76-Sg-BXz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ChU-h3-gTI"/>
                 <constraint firstItem="FJD-i2-pmg" firstAttribute="top" secondItem="0yb-Yn-Avx" secondAttribute="bottom" constant="10" id="Ghn-my-5Sq"/>
+                <constraint firstItem="jod-MN-TDJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GmS-N3-MoZ"/>
                 <constraint firstItem="gF9-1i-g51" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Gmb-OF-4Wg"/>
+                <constraint firstItem="jod-MN-TDJ" firstAttribute="top" secondItem="WqM-lb-OZH" secondAttribute="bottom" id="RXv-nf-6G8"/>
+                <constraint firstItem="7NW-h3-0zX" firstAttribute="trailing" secondItem="Y76-Sg-BXz" secondAttribute="trailing" id="UAy-G6-mby"/>
                 <constraint firstItem="0yb-Yn-Avx" firstAttribute="top" secondItem="Y76-Sg-BXz" secondAttribute="bottom" constant="10" id="VcS-Mx-zgw"/>
                 <constraint firstItem="WqM-lb-OZH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="a8G-a2-hFr"/>
-                <constraint firstItem="WqM-lb-OZH" firstAttribute="top" secondItem="gF9-1i-g51" secondAttribute="bottom" constant="97" id="h0H-Ts-uPw"/>
                 <constraint firstItem="FJD-i2-pmg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lbb-fG-eAr"/>
                 <constraint firstItem="gF9-1i-g51" firstAttribute="top" secondItem="bZT-LB-ns6" secondAttribute="bottom" constant="10" id="ndX-Jt-b6j"/>
+                <constraint firstItem="WqM-lb-OZH" firstAttribute="top" secondItem="7NW-h3-0zX" secondAttribute="bottom" id="oic-mE-3S0"/>
+                <constraint firstItem="7NW-h3-0zX" firstAttribute="leading" secondItem="Y76-Sg-BXz" secondAttribute="leading" id="q0B-Fd-fVu"/>
                 <constraint firstItem="0yb-Yn-Avx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rke-xw-7cI"/>
                 <constraint firstItem="Y76-Sg-BXz" firstAttribute="top" secondItem="imE-a4-dvt" secondAttribute="bottom" constant="10" id="tYs-4r-E4t"/>
                 <constraint firstItem="imE-a4-dvt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="u5S-sR-NgN"/>
+                <constraint firstItem="7NW-h3-0zX" firstAttribute="top" secondItem="gF9-1i-g51" secondAttribute="bottom" id="ujP-ka-b6G"/>
+                <constraint firstAttribute="bottom" secondItem="jod-MN-TDJ" secondAttribute="bottom" id="viM-LF-yxo"/>
+                <constraint firstItem="jod-MN-TDJ" firstAttribute="leading" secondItem="WqM-lb-OZH" secondAttribute="leading" id="yUQ-J8-VBr"/>
+                <constraint firstItem="jod-MN-TDJ" firstAttribute="height" secondItem="7NW-h3-0zX" secondAttribute="height" id="ziD-MI-Q1r"/>
             </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
 </document>
