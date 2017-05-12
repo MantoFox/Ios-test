@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4030B98AC52326BAE6C602B5 /* Pods_IosClass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC268668B80B965397BEFAD1 /* Pods_IosClass.framework */; };
+		848988871EC5991C00F813D4 /* RestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 848988861EC5991C00F813D4 /* RestClient.m */; };
+		8489888A1EC59A2F00F813D4 /* RestRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 848988891EC59A2F00F813D4 /* RestRequest.m */; };
+		8489888D1EC59CEF00F813D4 /* RestResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8489888C1EC59CEF00F813D4 /* RestResponse.m */; };
+		848988961EC5A9BE00F813D4 /* RestRequestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 848988951EC5A9BE00F813D4 /* RestRequestTests.m */; };
+		848988981EC5A9D100F813D4 /* RestClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 848988971EC5A9D100F813D4 /* RestClientTests.m */; };
+		8489889C1EC5AE4100F813D4 /* MaskView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8489889B1EC5AE4100F813D4 /* MaskView.xib */; };
+		848988A01EC5B03000F813D4 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8489889E1EC5B03000F813D4 /* LoginViewController.m */; };
+		848988A11EC5B03000F813D4 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8489889F1EC5B03000F813D4 /* LoginView.xib */; };
 		848DFC631EBC636C000E46A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 848DFC621EBC636C000E46A7 /* main.m */; };
 		848DFC661EBC636C000E46A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 848DFC651EBC636C000E46A7 /* AppDelegate.m */; };
 		848DFC691EBC636C000E46A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848DFC681EBC636C000E46A7 /* ViewController.m */; };
@@ -33,6 +41,18 @@
 		1320BF922041A6DCD2FF8236 /* Pods-IosClass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosClass.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IosClass/Pods-IosClass.debug.xcconfig"; sourceTree = "<group>"; };
 		28CF80DDEB42D176B8508DE9 /* Pods-IosClass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosClass.release.xcconfig"; path = "Pods/Target Support Files/Pods-IosClass/Pods-IosClass.release.xcconfig"; sourceTree = "<group>"; };
 		466A0DAEA70F493AED5A2065 /* Pods_IosClass_IosClassTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IosClass_IosClassTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		848988851EC5991C00F813D4 /* RestClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RestClient.h; path = RestClient/RestClient.h; sourceTree = "<group>"; };
+		848988861EC5991C00F813D4 /* RestClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RestClient.m; path = RestClient/RestClient.m; sourceTree = "<group>"; };
+		848988881EC59A2F00F813D4 /* RestRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RestRequest.h; path = RestClient/RestRequest.h; sourceTree = "<group>"; };
+		848988891EC59A2F00F813D4 /* RestRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RestRequest.m; path = RestClient/RestRequest.m; sourceTree = "<group>"; };
+		8489888B1EC59CEF00F813D4 /* RestResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RestResponse.h; path = RestClient/RestResponse.h; sourceTree = "<group>"; };
+		8489888C1EC59CEF00F813D4 /* RestResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RestResponse.m; path = RestClient/RestResponse.m; sourceTree = "<group>"; };
+		848988951EC5A9BE00F813D4 /* RestRequestTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RestRequestTests.m; path = RestClient/RestRequestTests.m; sourceTree = "<group>"; };
+		848988971EC5A9D100F813D4 /* RestClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RestClientTests.m; path = RestClient/RestClientTests.m; sourceTree = "<group>"; };
+		8489889B1EC5AE4100F813D4 /* MaskView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MaskView.xib; path = View/MaskView.xib; sourceTree = "<group>"; };
+		8489889D1EC5B03000F813D4 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = View/LoginViewController.h; sourceTree = "<group>"; };
+		8489889E1EC5B03000F813D4 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = View/LoginViewController.m; sourceTree = "<group>"; };
+		8489889F1EC5B03000F813D4 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginView.xib; path = View/LoginView.xib; sourceTree = "<group>"; };
 		848DFC5E1EBC636C000E46A7 /* IosClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848DFC621EBC636C000E46A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		848DFC641EBC636C000E46A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,6 +101,46 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		848988821EC5988500F813D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		848988831EC5988C00F813D4 /* RestClient */ = {
+			isa = PBXGroup;
+			children = (
+				848988851EC5991C00F813D4 /* RestClient.h */,
+				848988861EC5991C00F813D4 /* RestClient.m */,
+				848988881EC59A2F00F813D4 /* RestRequest.h */,
+				848988891EC59A2F00F813D4 /* RestRequest.m */,
+				8489888B1EC59CEF00F813D4 /* RestResponse.h */,
+				8489888C1EC59CEF00F813D4 /* RestResponse.m */,
+			);
+			name = RestClient;
+			sourceTree = "<group>";
+		};
+		848988841EC5989400F813D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8489889B1EC5AE4100F813D4 /* MaskView.xib */,
+				8489889D1EC5B03000F813D4 /* LoginViewController.h */,
+				8489889E1EC5B03000F813D4 /* LoginViewController.m */,
+				8489889F1EC5B03000F813D4 /* LoginView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8489888E1EC5A8D900F813D4 /* RestClient */ = {
+			isa = PBXGroup;
+			children = (
+				848988951EC5A9BE00F813D4 /* RestRequestTests.m */,
+				848988971EC5A9D100F813D4 /* RestClientTests.m */,
+			);
+			name = RestClient;
+			sourceTree = "<group>";
+		};
 		848DFC551EBC636C000E46A7 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +164,9 @@
 		848DFC601EBC636C000E46A7 /* IosClass */ = {
 			isa = PBXGroup;
 			children = (
+				848988831EC5988C00F813D4 /* RestClient */,
+				848988841EC5989400F813D4 /* View */,
+				848988821EC5988500F813D4 /* Model */,
 				848DFC641EBC636C000E46A7 /* AppDelegate.h */,
 				848DFC651EBC636C000E46A7 /* AppDelegate.m */,
 				848DFC671EBC636C000E46A7 /* ViewController.h */,
@@ -129,6 +192,7 @@
 		848DFC7D1EBC636C000E46A7 /* IosClassTests */ = {
 			isa = PBXGroup;
 			children = (
+				8489888E1EC5A8D900F813D4 /* RestClient */,
 				848DFC7E1EBC636C000E46A7 /* IosClassTests.m */,
 				848DFC801EBC636C000E46A7 /* Info.plist */,
 			);
@@ -234,6 +298,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848988A11EC5B03000F813D4 /* LoginView.xib in Resources */,
+				8489889C1EC5AE4100F813D4 /* MaskView.xib in Resources */,
 				848DFC741EBC636C000E46A7 /* LaunchScreen.storyboard in Resources */,
 				848DFC711EBC636C000E46A7 /* Assets.xcassets in Resources */,
 				848DFC6C1EBC636C000E46A7 /* Main.storyboard in Resources */,
@@ -347,9 +413,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848988A01EC5B03000F813D4 /* LoginViewController.m in Sources */,
 				848DFC691EBC636C000E46A7 /* ViewController.m in Sources */,
+				8489888A1EC59A2F00F813D4 /* RestRequest.m in Sources */,
+				8489888D1EC59CEF00F813D4 /* RestResponse.m in Sources */,
 				848DFC661EBC636C000E46A7 /* AppDelegate.m in Sources */,
 				848DFC6F1EBC636C000E46A7 /* IosClass.xcdatamodeld in Sources */,
+				848988871EC5991C00F813D4 /* RestClient.m in Sources */,
 				848DFC631EBC636C000E46A7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +429,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				848DFC7F1EBC636C000E46A7 /* IosClassTests.m in Sources */,
+				848988961EC5A9BE00F813D4 /* RestRequestTests.m in Sources */,
+				848988981EC5A9D100F813D4 /* RestClientTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
